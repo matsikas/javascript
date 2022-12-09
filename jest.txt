@@ -1,0 +1,7 @@
+To run unit test, use the command:
+
+jest <test directory>
+
+This command will look for all the test files in the specified directory.
+
+Test files must be of the format "<filename>.test.js"

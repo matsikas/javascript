@@ -30,18 +30,15 @@ app.get('/greeting/:name', (req, res) => {
 
 // Define the "/sum" endpoint
 app.get('/sum', (req, res) => {
+
     // Extract the "a" and "b" query parameters from the request
     const a = req.query.a;
     const b = req.query.b;
-  
     const num1 = parseInt(a);
     const num2 = parseInt(b);
     const num3 = num1 + num2;
-    console.log('A ' + num1 + ' B ' + num2 + ' = C ' + num3);
-  
     const str = String(num3);
-
-    // Send the sum as the response
+    
     res.send(str);
   });
 
@@ -53,5 +50,4 @@ app.listen(3000, () => {
 
 // You can call this microservice from the browser as follows:
 // http://localhost:3000/greeting/Dave
-
-//http://localhost:3000/sum?a=2&b=3
+// http://localhost:3000/sum?a=55&b=30

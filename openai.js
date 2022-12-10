@@ -1,7 +1,7 @@
 const fetch = require('node-fetch');
 
 // Replace with your OpenAI API key
-const API_KEY = "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";
+const API_KEY = "";
 
 async function generateText(prompt, model) {
   // Set the request parameters
